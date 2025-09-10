@@ -1,0 +1,680 @@
+<div class="package-widget">
+  <div class="package-container">
+    <div class="package-header">
+      <h2>PERSONALIZED PACKAGE</h2>
+    </div>
+
+    <div class="package-content">
+      <!-- SERVICES LIST -->
+      <div class="services-section">
+        <h3>Select Services</h3>
+
+        <div class="service-item">
+          <input type="checkbox" id="service1" class="service-checkbox" data-price="700">
+          <label for="service1" class="service-label">Facebook & Instagram setup</label>
+          <span class="service-price-tag">700 MAD</span>
+        </div>
+
+        <div class="service-item">
+          <input type="checkbox" id="service2" class="service-checkbox" data-price="300" checked>
+          <label for="service2" class="service-label">Profiles optimization</label>
+          <span class="service-price-tag">300 MAD</span>
+        </div>
+
+        <div class="service-item">
+          <input type="checkbox" id="service3" class="service-checkbox" data-price="1000">
+          <label for="service3" class="service-label">MBS & BM Setup</label>
+          <span class="service-price-tag">1000 MAD</span>
+        </div>
+
+        <div class="service-item">
+          <input type="checkbox" id="service4" class="service-checkbox" data-price="1500">
+          <label for="service4" class="service-label">Meta Ads Campaign (Awareness, Traffic or Engagement)</label>
+          <span class="service-price-tag">1500 MAD</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn decrease">-</button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn increase">+</button>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <input type="checkbox" id="service5" class="service-checkbox" data-price="2500">
+          <label for="service5" class="service-label">Meta Ads Campaign (Leads, App promotion or Sales)</label>
+          <span class="service-price-tag">2500 MAD</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn decrease">-</button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn increase">+</button>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <input type="checkbox" id="service6" class="service-checkbox" data-price="500" checked>
+          <label for="service6" class="service-label">1 branded Video</label>
+          <span class="service-price-tag">500 MAD</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn decrease">-</button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn increase">+</button>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <input type="checkbox" id="service7" class="service-checkbox" data-price="200" checked>
+          <label for="service7" class="service-label">1 branded Image</label>
+          <span class="service-price-tag">200 MAD</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn decrease">-</button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn increase">+</button>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <input type="checkbox" id="service8" class="service-checkbox" data-price="300">
+          <label for="service8" class="service-label">Carousel</label>
+          <span class="service-price-tag">300 MAD</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn decrease">-</button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn increase">+</button>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <input type="checkbox" id="service9" class="service-checkbox" data-price="1000" checked>
+          <label for="service9" class="service-label">Website + landing page hosting</label>
+          <span class="service-price-tag">1000 MAD</span>
+        </div>
+
+        <div class="service-item">
+          <input type="checkbox" id="service10" class="service-checkbox" data-price="1000">
+          <label for="service10" class="service-label">1 strategy call/month</label>
+          <span class="service-price-tag">1000 MAD</span>
+        </div>
+      </div>
+
+      <!-- PRICE SECTION -->
+      <div class="price-section">
+        <h3>Your Package</h3>
+
+        <div class="price-display">
+          <div class="price-amount"><span class="price-currency">MAD </span>2900</div>
+          <p>Total for selected services</p>
+          <div class="total-services">4 services selected</div>
+        </div>
+
+        <!-- Coupon Code Section -->
+        <div class="coupon-section">
+          <div class="coupon-input-group">
+            <input type="text" class="coupon-input" placeholder="Enter coupon code">
+            <button class="coupon-apply-btn">Apply</button>
+          </div>
+          <div class="coupon-message"></div>
+          <div class="discount-display">
+            <span class="discount-label">Discount: </span>
+            <span class="discount-amount">-0 MAD</span>
+          </div>
+        </div>
+
+        <div class="final-price-display">
+          <div class="final-price-label">Final Price:</div>
+          <div class="final-price-amount"><span class="price-currency">MAD </span>2900</div>
+        </div>
+
+        <div class="service-details">
+          <p>Your customized package includes all selected services with professional execution and timely delivery.</p>
+          <p>All prices are in Moroccan Dirham (MAD). Package discounts may apply for multiple services.</p>
+        </div>
+
+        <button class="select-button" id="package-select-btn">Select Package →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* --- Scoped styles so they don't affect your Carrd page --- */
+.package-widget * { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.package-widget { 
+  background: #171A1C;
+  padding: 20px; 
+  display: flex; 
+  justify-content: center; 
+  min-height: 100vh;
+}
+
+.package-widget .package-container {
+  background: #FFFFFF0F;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  max-width: 950px; 
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.package-widget .package-header { 
+  background:#08976B; 
+  color:#FFFFFF; 
+  padding:30px; 
+  text-align:center; 
+  position: relative;
+  overflow: hidden;
+}
+
+.package-widget .package-header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%);
+  transform: rotate(30deg);
+}
+
+.package-widget .package-header h2 { 
+  font-size:32px; 
+  font-weight:800; 
+  position: relative;
+  color: #FFFFFF;
+}
+
+.package-widget .package-content { 
+  display:flex; 
+  flex-wrap:wrap; 
+}
+
+.package-widget .services-section { 
+  flex:1; 
+  min-width:300px; 
+  padding:30px; 
+  background: #171A1C;
+}
+
+.package-widget .services-section h3 {
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #08976B;
+}
+
+.package-widget .price-section { 
+  flex:0 0 280px; 
+  padding:30px; 
+  background: #171A1C;
+  display:flex; 
+  flex-direction:column; 
+  border-left: 1px solid #08976B;
+}
+
+.package-widget .price-section h3 {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #08976B;
+}
+
+/* Service item styling */
+.package-widget .service-item {
+  display:flex; 
+  align-items:center; 
+  margin-bottom:15px;
+  padding:15px; 
+  border-radius:10px; 
+  border:1px solid #08976B;
+  background:#171A1C; 
+  cursor:pointer;
+  transition: all 0.3s ease;
+}
+.package-widget .service-item:hover { 
+  background:rgba(8,151,107,0.1); 
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(8, 151, 107, 0.2);
+}
+.package-widget .service-item.selected { 
+  border-left:5px solid #08976B; 
+  background:rgba(8,151,107,0.15); 
+}
+
+.package-widget .service-checkbox { 
+  margin-right:15px; 
+  width: 22px;
+  height: 22px;
+  accent-color: #08976B;
+}
+.package-widget .service-label { 
+  flex:1; 
+  color:#FFFFFF; 
+  font-weight: 500;
+}
+.package-widget .service-price-tag { 
+  color:#08976B; 
+  font-weight:600; 
+  background: rgba(8, 151, 107, 0.1);
+  padding: 5px 12px;
+  border-radius: 15px;
+  margin-left:10px; 
+}
+
+/* Quantity controls */
+.package-widget .quantity-controls { 
+  display:flex; 
+  align-items:center; 
+  margin-left:15px; 
+}
+.package-widget .quantity-btn { 
+  width:28px; 
+  height:28px; 
+  background:#08976B; 
+  color:#FFFFFF; 
+  border:none; 
+  border-radius:50%; 
+  cursor:pointer; 
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.package-widget .quantity-btn:hover {
+  background: #067a54;
+  transform: scale(1.1);
+}
+.package-widget .quantity-input { 
+  width:40px; 
+  text-align:center; 
+  margin:0 8px; 
+  border: 1px solid #08976B;
+  border-radius: 4px;
+  padding: 4px;
+  font-weight: 600;
+  background: #171A1C;
+  color: #FFFFFF;
+}
+
+/* Price section */
+.package-widget .price-amount { 
+  font-size:42px; 
+  font-weight:800; 
+  color:#08976B; 
+  margin:15px 0; 
+}
+.package-widget .price-currency {
+  font-size: 20px;
+  color: #08976B;
+  vertical-align: super;
+}
+.package-widget .select-button { 
+  background:#08976B; 
+  color:#FFFFFF; 
+  padding:16px 20px; 
+  border:none; 
+  border-radius:10px; 
+  font-weight:700; 
+  cursor:pointer; 
+  font-size: 18px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(8, 151, 107, 0.3);
+}
+.package-widget .select-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(8, 151, 107, 0.4);
+  background: #067a54;
+}
+.package-widget .select-button:active {
+  transform: translateY(0);
+}
+
+.package-widget .service-details {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 1.6;
+  background: #171A1C;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #08976B;
+}
+
+.package-widget .total-services {
+  font-size: 15px;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+/* Coupon Section */
+.package-widget .coupon-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(8, 151, 107, 0.1);
+  border-radius: 10px;
+  border: 1px solid #08976B;
+}
+
+.package-widget .coupon-input-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.package-widget .coupon-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #08976B;
+  border-radius: 5px 0 0 5px;
+  background: #171A1C;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.package-widget .coupon-apply-btn {
+  padding: 10px 15px;
+  background: #08976B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.package-widget .coupon-apply-btn:hover {
+  background: #067a54;
+}
+
+.package-widget .coupon-message {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+
+.package-widget .discount-display {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 5px 0;
+  border-top: 1px dashed #08976B;
+}
+
+.package-widget .discount-label {
+  font-weight: 500;
+}
+
+.package-widget .discount-amount {
+  color: #FF6B6B;
+  font-weight: 600;
+}
+
+.package-widget .final-price-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 15px;
+  background: rgba(8, 151, 107, 0.15);
+  border-radius: 10px;
+  border: 1px solid #08976B;
+}
+
+.package-widget .final-price-label {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.package-widget .final-price-amount {
+  font-size: 24px;
+  font-weight: 800;
+  color: #08976B;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .package-widget .package-content {
+    flex-direction: column;
+  }
+  
+  .package-widget .price-section {
+    flex: 1;
+    border-left: none;
+    border-top: 1px solid #08976B;
+  }
+  
+  .package-widget .service-price-tag {
+    margin-left: 0;
+    margin-top: 8px;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .package-widget .quantity-controls {
+    flex-wrap: wrap;
+    margin-top: 8px;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .package-widget .service-item {
+    flex-wrap: wrap;
+  }
+  
+  .package-widget .coupon-input-group {
+    flex-direction: column;
+  }
+  
+  .package-widget .coupon-input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .package-widget .coupon-apply-btn {
+    border-radius: 5px;
+  }
+}
+</style>
+
+<script>
+(function(){
+  // Initialize variables
+  const widget = document.querySelector(".package-widget");
+  if(!widget) return;
+
+  const checkboxes = widget.querySelectorAll('.service-checkbox');
+  const priceDisplay = widget.querySelector('.price-amount');
+  const servicesCount = widget.querySelector('.total-services');
+  const selectButton = widget.querySelector('#package-select-btn');
+  const couponInput = widget.querySelector('.coupon-input');
+  const couponApplyBtn = widget.querySelector('.coupon-apply-btn');
+  const couponMessage = widget.querySelector('.coupon-message');
+  const discountDisplay = widget.querySelector('.discount-amount');
+  const finalPriceDisplay = widget.querySelector('.final-price-amount');
+  
+  let currentPrice = 0;
+  let discount = 0;
+  let appliedCoupon = null;
+
+  // Define available coupons (in a real app, this would come from a server)
+  const availableCoupons = {
+    'SAVE10': 10, // 10% discount
+    'WELCOME15': 15, // 15% discount
+    'SUMMER20': 20 // 20% discount
+  };
+
+  // Set initial price based on pre-selected services
+  updatePrice();
+
+  // Add event listeners to all checkboxes
+  checkboxes.forEach(cb => {
+    cb.addEventListener('change', () => { 
+      cb.parentElement.classList.toggle('selected', cb.checked); 
+      updatePrice(); 
+    });
+    if(cb.checked) cb.parentElement.classList.add('selected');
+  });
+
+  // Add event listeners to quantity buttons
+  widget.querySelectorAll('.quantity-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const input = btn.closest('.service-item').querySelector('.quantity-input');
+      let val = parseInt(input.value) || 1;
+      if(btn.classList.contains('increase')) val++; 
+      else if(val > 1) val--;
+      input.value = val; 
+      updatePrice();
+    });
+  });
+
+  // Add event listeners to quantity inputs
+  widget.querySelectorAll('.quantity-input').forEach(input => {
+    input.addEventListener('change', () => { 
+      if(input.value < 1) input.value = 1; 
+      updatePrice(); 
+    });
+  });
+
+  // Add event listener to coupon apply button
+  couponApplyBtn.addEventListener('click', applyCoupon);
+
+  // Add event listener for Enter key in coupon input
+  couponInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      applyCoupon();
+    }
+  });
+
+  // Add event listener to select button
+  if (selectButton) {
+    selectButton.addEventListener('click', handlePackageSelection);
+  }
+
+  // Function to apply coupon
+  function applyCoupon() {
+    const couponCode = couponInput.value.trim().toUpperCase();
+    
+    if (!couponCode) {
+      couponMessage.textContent = 'Please enter a coupon code';
+      couponMessage.style.color = '#FF6B6B';
+      return;
+    }
+    
+    if (appliedCoupon === couponCode) {
+      couponMessage.textContent = 'Coupon already applied';
+      couponMessage.style.color = '#08976B';
+      return;
+    }
+    
+    if (availableCoupons.hasOwnProperty(couponCode)) {
+      appliedCoupon = couponCode;
+      discount = availableCoupons[couponCode];
+      couponMessage.textContent = `Coupon applied: ${discount}% discount`;
+      couponMessage.style.color = '#08976B';
+      updatePrice();
+    } else {
+      couponMessage.textContent = 'Invalid coupon code';
+      couponMessage.style.color = '#FF6B6B';
+      appliedCoupon = null;
+      discount = 0;
+      updatePrice();
+    }
+  }
+
+  // Function to update the price display
+  function updatePrice(){
+    let total = 0, count = 0;
+    checkboxes.forEach(cb => {
+      if(cb.checked){
+        let p = parseInt(cb.dataset.price);
+        const qty = cb.closest('.service-item').querySelector('.quantity-input');
+        if(qty) p *= parseInt(qty.value) || 1;
+        total += p; 
+        count++;
+      }
+    });
+    
+    currentPrice = total;
+    
+    // Calculate discount
+    const discountAmount = discount ? (total * discount / 100) : 0;
+    const finalPrice = total - discountAmount;
+    
+    // Update displays
+    priceDisplay.innerHTML = `<span class="price-currency">MAD </span>${total}`;
+    servicesCount.textContent = `${count} services selected`;
+    discountDisplay.textContent = `-${discountAmount} MAD`;
+    finalPriceDisplay.innerHTML = `<span class="price-currency">MAD </span>${finalPrice}`;
+  }
+
+  // Function to handle package selection
+  function handlePackageSelection() {
+    // Simple animation when button is clicked
+    this.style.transform = 'scale(0.97)';
+    
+    // Get selected services
+    const selectedServices = [];
+    checkboxes.forEach(checkbox => {
+      if (checkbox.checked) {
+        let service = {
+          name: checkbox.nextElementSibling.textContent,
+          price: parseInt(checkbox.dataset.price)
+        };
+
+        // Check if this service has quantity controls
+        const quantityControls = checkbox.closest('.service-item').querySelector('.quantity-input');
+        if (quantityControls) {
+          const quantity = parseInt(quantityControls.value) || 1;
+          service.quantity = quantity;
+          service.total = service.price * quantity;
+        } else {
+          service.total = service.price;
+        }
+
+        selectedServices.push(service);
+      }
+    });
+
+    // Calculate final price with discount
+    const discountAmount = discount ? (currentPrice * discount / 100) : 0;
+    const finalPrice = currentPrice - discountAmount;
+
+    // In a real implementation, you would submit this data to a server
+    if (selectedServices.length === 0) {
+      alert("Please select at least one service to proceed.");
+    } else {
+      let message = `Package selected for MAD ${finalPrice}!\n\nServices included:\n`;
+      selectedServices.forEach(s => {
+        if (s.quantity) {
+          message += `- ${s.name} (${s.quantity} × ${s.price} MAD) = ${s.total} MAD\n`;
+        } else {
+          message += `- ${s.name}: ${s.price} MAD\n`;
+        }
+      });
+      
+      if (discount) {
+        message += `\nDiscount applied: ${discount}% (${discountAmount} MAD)`;
+      }
+      
+      alert(message);
+    }
+
+    setTimeout(() => {
+      this.style.transform = '';
+    }, 200);
+  }
+})();
+</script>
